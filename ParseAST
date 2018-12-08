@@ -1,0 +1,10 @@
+#0  clang::ParseAST (S=..., PrintStats=false, SkipFunctionBodies=false) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/lib/Parse/ParseAST.cpp:121
+#1  0x0000000004c4be15 in clang::ASTFrontendAction::ExecuteAction (this=0xcf158d0) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/lib/Frontend/FrontendAction.cpp:999
+#2  0x000000000516f692 in clang::CodeGenAction::ExecuteAction (this=0xcf158d0) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/lib/CodeGen/CodeGenAction.cpp:1031
+#3  0x0000000004c4b82a in clang::FrontendAction::Execute (this=0xcf158d0) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/lib/Frontend/FrontendAction.cpp:897
+#4  0x0000000004be67a2 in clang::CompilerInstance::ExecuteAction (this=0xcf13870, Act=...) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/lib/Frontend/CompilerInstance.cpp:991
+#5  0x0000000004d9d921 in clang::ExecuteCompilerInvocation (Clang=0xcf13870) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/lib/FrontendTool/ExecuteCompilerInvocation.cpp:252
+#6  0x000000000202c936 in cc1_main (Argv=..., Argv0=0x7fffffffdcb3 "/usr/local/bin/clang-6.0", MainAddr=0x201eef6 <GetExecutablePath[abi:cxx11](char const*, bool)>)
+    at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/tools/driver/cc1_main.cpp:221
+#7  0x0000000002021892 in ExecuteCC1Tool (argv=..., Tool=...) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/tools/driver/driver.cpp:310
+#8  0x000000000202259c in main (argc_=53, argv_=0x7fffffffd718) at /home/juzix/Downloads/llvm-6.0.1.src/tools/clang/tools/driver/driver.cpp:389
